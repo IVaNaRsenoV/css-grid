@@ -1,0 +1,36 @@
+.content {
+  grid-area: 2/3/11/14;
+  background-color: orange;
+
+  .content__show {
+    background: #B3C0D9;
+    width: 37px;
+    height: 25px;
+    color: #ffff;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .item__content {
+    display: flex;
+    padding-right: 10px;
+  }
+
+  h3 {
+    margin-right: 10px;
+  }
+
+    .skillbox {
+      grid-area: 2/1/11/8;
+    }
+
+  }
+
+  @media screen and (max-width: 700px) {
+    .content {
+      grid-area: 2/2/12/14;
+    }
+  }
