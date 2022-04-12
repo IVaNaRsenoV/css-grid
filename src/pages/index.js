@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Header, Sidebar, Content, Footer } from "./section";
 
 import styles from "./main.module.scss";

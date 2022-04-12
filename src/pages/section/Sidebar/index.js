@@ -1,4 +1,5 @@
 import React from "react";
+import Navbar from "../../../components/Components-Sidebar/Navbar";
 import styles from "./Sidebar.module.scss";
 
 export const Sidebar = () => {
@@ -6,6 +7,7 @@ export const Sidebar = () => {
     <sidebar className={styles.sidebar}>
       <input type="text" placeholder="Поиск..." />
       <input type="submit" />
+      <Navbar />
     </sidebar>
   );
 };
