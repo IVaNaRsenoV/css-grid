@@ -71,6 +71,6 @@ function Menu({ items }) {
   );
 }
 
-export const App = () => {
+export const Navbar = () => {
   return <Menu items={menu} />;
 };
