@@ -1,7 +1,46 @@
-import { useState } from "react";
-import { useList } from "../../../hooks/useList";
+<===================================< Многоуровневое меню с помощью рекурсии >===================================>
 
-const Menu = ({ items }) => {
+import { useState } from "react";
+
+const menu = [
+  {
+    title: "Курсы",
+    children: [
+      {
+        title: "Курсы 1.1",
+        children: [
+          {
+            title: "Курсы 1.1.1",
+          },
+        ],
+      },
+      {
+        title: "Курсы 1.2",
+      },
+    ],
+  },
+  {
+    title: "Сервисы",
+    children: [
+      {
+        title: "Сервисы 2.1",
+      },
+    ],
+  },
+  {
+    title: "Книги",
+    children: [
+      {
+        title: "Книги 2.1",
+      },
+    ],
+  },
+  {
+    title: "Товары",
+  },
+];
+
+function Menu({ items }) {
   const [displayChildren, setDisplayChildren] = useState({});
 
   return (
@@ -30,10 +69,8 @@ const Menu = ({ items }) => {
       })}
     </ul>
   );
-};
+}
 
-export const Navbar = () => {
-  const data = useList("/post", "POST");
-  console.log(data);
-  return <Menu items={data} />;
+export const App = () => {
+  return <Menu items={menu} />;
 };

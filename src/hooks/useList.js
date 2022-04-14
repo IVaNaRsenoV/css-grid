@@ -7,7 +7,8 @@ export const useList = (url, method) => {
     axios({
       method,
       url,
-    }).then((res) => setMenu(res.data));
+    }).then((res) => setMenu(res.data.data));
   }, []);
+
   return menu;
 };

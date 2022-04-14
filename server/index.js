@@ -3,7 +3,7 @@ const express = require("express");
 const cors = require("cors");
 const app = express();
 
-const data = require("./menu.json");
+const data = require("./menu");
 console.log(data);
 
 const PORT = process.env.PORT || 8000;
