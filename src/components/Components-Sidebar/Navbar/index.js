@@ -22,7 +22,12 @@ const Node = ({ menu }) => {
       {menu.map((item) => {
         return (
           <>
-            <li key={item.id} className={styles.item} onClick={toggle}>
+            <li
+              key={item.id}
+              className={styles.item}
+              onClick={toggle}
+              style={{ paddingTop: "0px" }}
+            >
               {item.item}
             </li>
             {isOpen && item.children && <Node menu={item.children} />}
@@ -37,7 +42,7 @@ export const Navbar = () => {
   return (
     <ul>
       {data.map((item) => (
-        <li>
+        <li className={styles.list}>
           {item.svg}
           <Node menu={item.item} />
         </li>

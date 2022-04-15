@@ -1,6 +1,8 @@
 .content {
   grid-area: 2/3/11/14;
-  background-color: orange;
+  background-color: #FFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
 
   .content__show {
     background: #B3C0D9;
@@ -33,4 +35,18 @@
     .content {
       grid-area: 2/2/12/14;
     }
+  }
+
+  .content__p1 {
+    font-family: Noto Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .head__content {
+    display: flex;
+    border-bottom: 1px solid #EBEBEB;
   }
