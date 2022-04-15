@@ -1,12 +1,47 @@
-import { Menu } from "./Menu";
-import { menu } from "./data/data";
+import { useState } from "react";
+import { Cap, Cloud, Book, Products } from "../../../images/svg/sidebar";
+import { courses, services, books, products } from "./data";
+import styles from "./Navbar.module.scss";
+
+const data = [
+  { svg: <Cap />, item: courses },
+  { svg: <Cloud />, item: services },
+  { svg: <Book />, item: books },
+  { svg: <Products />, item: products },
+];
+
+const Node = ({ menu }) => {
+  const [isOpen, setOpen] = useState(false);
+
+  const toggle = () => {
+    setOpen(!isOpen);
+  };
+
+  return (
+    <ul className={styles.navbar}>
+      {menu.map((item) => {
+        return (
+          <>
+            <li key={item.id} className={styles.item} onClick={toggle}>
+              {item.item}
+            </li>
+            {isOpen && item.children && <Node menu={item.children} />}
+          </>
+        );
+      })}
+    </ul>
+  );
+};
 
 export const Navbar = () => {
   return (
-    <>
-      <input type="text" placeholder="Поиск..." />
-      <input type="submit" />
-      <Menu items={menu} />
-    </>
+    <ul>
+      {data.map((item) => (
+        <li>
+          {item.svg}
+          <Node menu={item.item} />
+        </li>
+      ))}
+    </ul>
   );
 };
