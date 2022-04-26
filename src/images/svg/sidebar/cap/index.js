@@ -1,8 +1,9 @@
 import React from "react";
 
-export const Cap = () => {
+export const Cap = (props) => {
   return (
     <svg
+      {...props}
       width="24"
       height="22"
       viewBox="0 0 24 22"

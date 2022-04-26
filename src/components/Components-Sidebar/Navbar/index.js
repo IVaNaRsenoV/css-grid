@@ -1,17 +1,13 @@
 import { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { Cap, Cloud, Book, Products } from "../../../images/svg/sidebar";
 import { courses, services, books, products } from "./data";
 import styles from "./Navbar.module.scss";
-
-const data = [
-  { svg: <Cap />, item: courses },
-  { svg: <Cloud />, item: services },
-  { svg: <Book />, item: books },
-  { svg: <Products />, item: products },
-];
+import classnames from "classnames";
 
 const Node = ({ menu }) => {
   const [isOpen, setOpen] = useState(false);
+  const [isToggle, setToggle] = useState(false);
 
   const toggle = () => {
     setOpen(!isOpen);
@@ -24,7 +20,7 @@ const Node = ({ menu }) => {
           <>
             <li
               key={item.id}
-              className={styles.item}
+              className={classnames([styles.item, "itemList"])}
               onClick={toggle}
               style={{ paddingTop: "0px" }}
             >
@@ -39,12 +35,27 @@ const Node = ({ menu }) => {
 };
 
 export const Navbar = () => {
+  const data = [
+    { svg: <Cap className={styles.svg} />, item: courses },
+    {
+      svg: <Cloud className={styles.svg} />,
+      item: services,
+    },
+    { svg: <Book className={styles.svg} />, item: books },
+    {
+      svg: <Products className={styles.svg} />,
+      item: products,
+    },
+  ];
+
   return (
     <ul>
       {data.map((item) => (
-        <li className={styles.list}>
-          {item.svg}
-          <Node menu={item.item} />
+        <li className={classnames([styles.list, "testListItem"])}>
+          <div className={styles.test}>
+            {item.svg}
+            <Node menu={item.item} />
+          </div>
         </li>
       ))}
     </ul>

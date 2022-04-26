@@ -17,14 +17,30 @@
     .item:hover {
         color: #7653FC;
     }
+
+    .item:hover ~ svg {
+        fill: red;
+    }
 }
 
 .list {
     list-style: none;
     display: flex;
-    svg {
-        fill: #787D85;
-        padding-top: 2px;
-        padding-right: 10px;
+    
+}
+
+.svg {
+    fill: #787D85;
+    padding-top: 2px;
+    padding-right: 10px;
+}
+
+.test {
+    display: inherit;
+}
+
+.test:hover {
+    .svg {
+        fill: #7653FC;
     }
 }

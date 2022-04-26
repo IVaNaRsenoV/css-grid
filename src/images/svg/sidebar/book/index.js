@@ -1,8 +1,9 @@
 import React from "react";
 
-export const Book = () => {
+export const Book = (props) => {
   return (
     <svg
+      {...props}
       width="24"
       height="23"
       viewBox="0 0 24 23"
