@@ -1,0 +1,39 @@
+.head__content__skillbox {
+    display: grid;
+    grid-area: 1/1/2/3;
+    display: flex;
+  }
+
+  .img_skillbox {
+    margin: 30px;
+    margin-bottom: 18px;
+  }
+
+  .chalice {
+    height: 14.998794555664062px;
+    width: 18px;
+    left: 774px;
+    top: 140px;
+    border-radius: 0px;
+    fill: #DCB44E;
+    border: 1px solid #DCB44E;
+    padding: 2px;
+    border-radius: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+
+  .proffesion {
+    font-family: Noto Sans;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #3B434E;
+    padding-bottom: 11px;
+  }
+
+  .head__text {
+    padding-top: 30px;
+  }

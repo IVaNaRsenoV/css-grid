@@ -1,0 +1,6 @@
+.head__content {
+    display: flex;
+    border-bottom: 1px solid #EBEBEB;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }

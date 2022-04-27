@@ -1,0 +1,18 @@
+.headerBtn {
+    margin-right: 8px;
+    height: 22px;
+    width: 87px;
+    left: 412px;
+    top: 169px;
+    border-radius: 20px;
+    border: 1px solid #EBEBEB;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.headerBtn:hover {
+    background-color: #000838fd;
+    border: 1px solid yellow;
+    color: yellow;
+}
