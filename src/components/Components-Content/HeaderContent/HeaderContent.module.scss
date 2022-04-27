@@ -1,6 +1,10 @@
+@mixin grid($grid, $params) {
+  display: $grid;
+  grid-template-columns: $params;
+}
+
 .head__content {
     display: flex;
     border-bottom: 1px solid #EBEBEB;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    @include grid(grid, repeat(4, 1fr));
   }

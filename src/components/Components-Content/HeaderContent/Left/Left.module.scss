@@ -1,11 +1,28 @@
+@mixin btn ($display, $justify, $align, $height, $width, $border-radius, $background-color, $border, $cursor, $color) {
+  display: $display;
+  justify-content: $justify;
+  align-items: $align;
+  height: $height;
+  width: $width;
+  border-radius: $border-radius;
+  background-color: $background-color;
+  border: $border;
+  cursor: $cursor;
+  color: $color;
+}
+
+@mixin p ($font-family, $font-size, $font-weight, $line-height, $letter, $color) {
+  font-family: $font-family;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  letter-spacing: $letter;
+  color: $color;
+}
+
 .p__star__inner {
-    font-family: 'Noto Sans';
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 19px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #3B434E;
+  @include p(Noto Sans, 14px, 300, 19px, 0em, #3B434E);
+  text-align: left;
 }
 
 .head__content__stars {
@@ -15,16 +32,7 @@
   }
 
   .btn__star {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include btn(flex, center, center, 22px, 67px, 20px, #C8F8E4, none, pointer, #1DC47E);
     font-weight: bold;
-    height: 22px;
-    width: 67px;
-    border-radius: 20px;
-    background-color: #C8F8E4;
-    color: #1DC47E;
-    border: none;
     margin-left: 10px;
-    cursor: pointer;
   }

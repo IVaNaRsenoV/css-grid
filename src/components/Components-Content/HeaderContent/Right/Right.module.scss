@@ -1,3 +1,22 @@
+@mixin size ($height, $width) {
+  height: $height;
+  width: $width;
+}
+
+@mixin p ($font-family, $font-size, $font-weight, $line-height, $letter, $color) {
+  font-family: $font-family;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  letter-spacing: $letter;
+  color: $color;
+}
+
+@mixin border($border, $radius) {
+  border: $border;
+  border-radius: $radius;
+}
+
 .head__content__skillbox {
     display: grid;
     grid-area: 1/1/2/3;
@@ -10,27 +29,17 @@
   }
 
   .chalice {
-    height: 14.998794555664062px;
-    width: 18px;
-    left: 774px;
-    top: 140px;
-    border-radius: 0px;
+    @include size (14.998794555664062px, 18px);
+    @include border (1px solid #DCB44E, 5px);
     fill: #DCB44E;
-    border: 1px solid #DCB44E;
     padding: 2px;
-    border-radius: 5px;
     margin-left: 5px;
     cursor: pointer;
   }
 
   .proffesion {
-    font-family: Noto Sans;
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 27px;
-    letter-spacing: 0em;
+    @include p (Noto Sans, 20px, 600, 27px, 0em, #3B434E);
     text-align: left;
-    color: #3B434E;
     padding-bottom: 11px;
   }
 

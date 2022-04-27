@@ -1,20 +1,18 @@
+@mixin p ($font-family, $font-size, $font-weight, $line-height, $letter, $color) {
+  font-family: $font-family;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  letter-spacing: $letter;
+  color: $color;
+}
+
 .p__star__top {
-    font-family: "Noto Sans";
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 27px;
-    letter-spacing: 0em;
+  @include p(Noto Sans, 20px, 400, 27px, 0em, #3B434E);
     text-align: left;
-    color: "#3B434E";
   }
 
   .p__star__inner {
-    font-family: 'Noto Sans';
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 19px;
-    letter-spacing: 0em;
+    @include p(Noto Sans, 14px, 300, 19px, 0em, #3B434E);
     text-align: left;
-    color: #3B434E;
 }
-
