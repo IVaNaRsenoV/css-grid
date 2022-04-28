@@ -1,0 +1,34 @@
+  .simple_rating__item {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .simple_rating__label {
+    flex: 0 0 20%;
+    height: 100%;
+    cursor: pointer;
+    color: darkblue;
+  }
+  
+  .simple_rating__label::before {
+    content: "★";
+    display: block;
+    transition: color 0.3s ease 0s;
+  }
+  
+  /* .simple-rating__item:checked,
+  .simple-rating__item:checked ~ .simple-rating__label {
+    color: #ffd300;
+  } */
+  
+  .simple_rating__label:hover,
+  .simple_rating__label:hover ~ .simple_rating__label,
+  .simple_rating__label:checked ~ .simple_rating__label:hover {
+    color: yellow;
+  }
+  

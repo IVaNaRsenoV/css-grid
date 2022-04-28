@@ -1,5 +1,6 @@
 import React from "react";
 import { Item } from "../Item";
+import { Rating } from "../../Rating";
 import styles from "./Left.module.scss";
 
 export const Left = () => {
@@ -10,7 +11,7 @@ export const Left = () => {
       </Item>
       <Item data={{ top: "5000$/мес.", bottom: "В кредит" }} />
       <div style={{ paddingRight: "30px" }}>
-        Звёзды
+        <Rating />
         <p className={styles.p__star__inner}>20 отзывов</p>
       </div>
     </div>

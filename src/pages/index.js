@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Header, Sidebar, Content, Footer } from "./section";
 
 import styles from "./main.module.scss";
-import classNames from "classnames";
 
 export const Main = () => {
   return (

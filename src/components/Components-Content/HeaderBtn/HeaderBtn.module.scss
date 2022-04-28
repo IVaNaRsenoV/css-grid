@@ -1,13 +1,16 @@
+@mixin btn ($height, $width, $border-radius, $background-color, $border, $cursor, $color) {
+    height: $height;
+    width: $width;
+    border-radius: $border-radius;
+    background-color: $background-color;
+    border: $border;
+    cursor: $cursor;
+    color: $color;
+  }
+
 .headerBtn {
+    @include btn (22px, 87px, 20px, #FFFFFF, 1px solid #EBEBEB, pointer, black);
     margin-right: 8px;
-    height: 22px;
-    width: 87px;
-    left: 412px;
-    top: 169px;
-    border-radius: 20px;
-    border: 1px solid #EBEBEB;
-    background-color: #FFFFFF;
-    cursor: pointer;
     transition: all 0.3s ease;
 }
 
