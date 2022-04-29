@@ -11,7 +11,7 @@ export const Left = () => {
       </Item>
       <Item data={{ top: "5000$/мес.", bottom: "В кредит" }} />
       <div style={{ paddingRight: "30px" }}>
-        <Rating />
+        <Rating nums={5} />
         <p className={styles.p__star__inner}>20 отзывов</p>
       </div>
     </div>

@@ -1,18 +1,13 @@
-.simple-rating {
-  position: relative;
-  font-size: 40px;
-  display: inline-block;
-}
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
 
-.simple-rating::before {
-  content: "★★★★★";
-  display: block;
-}
-
-.simple_rating__items {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: row-reverse;
-  overflow: hidden;
-}
+  .rating:hover input:checked ~ label:before {
+    opacity: 0.3;
+  }
+  
+  .rating input:checked ~ label:before {
+    opacity: 1;
+  }
