@@ -4,15 +4,8 @@ import skillbox from "../../../images/png/content/top-content/skillbox/Rectangle
 import {
   Paragraph,
   HeaderContent,
-  Quality,
+  Description,
 } from "../../../components/Components-Content";
-
-const advantages = "Преимущества";
-const flaw = "Недостатки";
-
-const textAdvanced =
-  "Хорошо структурирован курс, быстрый отклик преподователей, качество подачи материала";
-const textFlaw = "Некоторое темы раскрыты не до конца";
 
 export const Content = () => {
   return (
@@ -20,8 +13,7 @@ export const Content = () => {
       <div className={styles.skillbox}>
         <HeaderContent skillbox={skillbox} />
         <Paragraph />
-        <Quality quality={advantages} text={textAdvanced} />
-        <Quality quality={flaw} text={textFlaw} />
+        <Description />
       </div>
     </content>
   );
