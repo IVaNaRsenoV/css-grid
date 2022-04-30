@@ -20,7 +20,7 @@ const RightBlock = ({ h, p }) => {
 
 export const Right = () => {
   return (
-    <div>
+    <div className={styles.right}>
       <div className={classnames([styles.quality, styles.border__green])}>
         <RightBlock h={obj[0].h} p={obj[0].p} />
       </div>

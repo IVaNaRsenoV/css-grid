@@ -1,5 +1,9 @@
 import styles from "./HeaderBtn.module.scss";
 
-export const HeaderBtn = ({ text }) => {
-  return <button className={styles.headerBtn}>{text}</button>;
+export const HeaderBtn = (props) => {
+  return (
+    <button className={styles.headerBtn} {...props}>
+      {props.text}
+    </button>
+  );
 };

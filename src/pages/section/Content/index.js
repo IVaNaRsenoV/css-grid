@@ -14,6 +14,13 @@ export const Content = () => {
         <HeaderContent skillbox={skillbox} />
         <Paragraph />
         <Description />
+        <div
+          style={{
+            width: "96%",
+            border: "1px solid #EBEBEB",
+            margin: "0 auto",
+          }}
+        ></div>
       </div>
     </content>
   );

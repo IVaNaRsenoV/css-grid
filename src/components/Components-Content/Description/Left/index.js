@@ -1,5 +1,6 @@
 import React from "react";
 import { LeftBlock } from "./LeftBlock";
+import { HeaderBtn } from "../../HeaderBtn";
 import styles from "./Left.module.scss";
 
 const obj = [
@@ -14,6 +15,10 @@ export const Left = () => {
       {obj.map(({ h, p }, i) => (
         <LeftBlock key={i} h={h} p={p} />
       ))}
+      <HeaderBtn
+        text={"Гарантия трудоустройства"}
+        style={{ width: "40%", marginTop: "20px" }}
+      />
     </div>
   );
 };

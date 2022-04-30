@@ -1,6 +1,5 @@
-@mixin btn ($height, $width, $border-radius, $background-color, $border, $cursor, $color) {
+@mixin btn ($height, $border-radius, $background-color, $border, $cursor, $color) {
     height: $height;
-    width: $width;
     border-radius: $border-radius;
     background-color: $background-color;
     border: $border;
@@ -9,7 +8,7 @@
   }
 
 .headerBtn {
-    @include btn (22px, 87px, 20px, #FFFFFF, 1px solid #EBEBEB, pointer, black);
+    @include btn (22px, 20px, #FFFFFF, 1px solid #EBEBEB, pointer, black);
     margin-right: 8px;
     transition: all 0.3s ease;
 }

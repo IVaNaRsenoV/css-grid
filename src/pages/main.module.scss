@@ -9,3 +9,10 @@
 .wrapper {
   @include wrapperGrid (100vh, grid, repeat(14, 1fr), repeat(12, 1fr), 10px);
 }
+
+@media screen and (max-width: 1200px) {
+  .wrapper {
+    grid-template-columns: none;
+    grid-template-rows: none;
+  }
+}

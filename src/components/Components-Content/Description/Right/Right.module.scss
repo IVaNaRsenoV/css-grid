@@ -1,11 +1,21 @@
-.quality {
-    grid-area: 1/3/3/5;
-    padding-left: 15px;
-}
-
-.border__green {
-    border-left: 3px solid #1DC37E;
-}
-.border__red {
-    border-left: 3px solid #FC836D;
+.right {
+    grid-area: 1/3/2/5;
+    .quality {
+        padding-left: 15px;
+        margin-bottom: 25px;
+        p {
+            padding: 0px;
+            padding-top: 5px;
+            color: #3B434E;
+            font-size: 16px;
+            line-height: 22px;  
+        }
+    }
+    
+    .border__green {
+        border-left: 3px solid #1DC37E;
+    }
+    .border__red {
+        border-left: 3px solid #FC836D;
+    }
 }

@@ -47,3 +47,9 @@
 .star:hover {
   fill: #7653FC;
 }
+
+@media screen and (max-width: 1400px) {
+  .head__content__stars {
+    margin: 0 auto;
+  }
+}
