@@ -5,7 +5,7 @@ import styles from "./Left.module.scss";
 
 export const Left = () => {
   return (
-    <div className={styles.head__content__stars} style={{ paddingTop: "40px" }}>
+    <div className={styles.head__content__stars} style={{ paddingTop: "30px" }}>
       <Item data={{ top: "24 000$", bottom: "Цена" }}>
         <button className={styles.btn__star}>-10 000$</button>
       </Item>

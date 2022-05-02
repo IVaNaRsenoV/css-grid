@@ -1,0 +1,34 @@
+.showReviews__container {
+    padding-bottom: 14px;
+    background: #FFFFFF;
+    grid-area: 10/3/11/14;
+    padding-left: 30px;
+    padding-top: 22px;
+    button {
+        background: #7653FC;
+        width: 148px;
+        height: 35px;
+        border-radius: 5px;
+        border: none;
+        font-size: 14px;
+        color: #FFFFFF;
+        cursor: pointer;
+        position: relative;
+        transition: all 0.2s;
+        margin-right: 20px;
+    }
+    .arrow {
+        position: absolute;
+        right: 10px;
+
+    }
+    button:hover {
+        color: #3B434E;
+        background: #FFFFFF;
+        border: 1px solid #EBEBEB
+    }
+    button:hover .arrow {
+        transform: rotate(90deg);
+        display: inline-block;
+    }
+}

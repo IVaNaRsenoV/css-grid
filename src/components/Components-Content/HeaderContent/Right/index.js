@@ -12,8 +12,10 @@ export const Right = ({ skillbox }) => {
         <h3 className={styles.proffesion}>
           Профессия дизайнер от 0 до PRO <Chalice className={styles.chalice} />
         </h3>
-        <HeaderBtn text={"Photoshop"} />
-        <HeaderBtn text={"Дизайн"} />
+        <div style={{ display: "flex" }}>
+          <HeaderBtn text={"Photoshop"} />
+          <HeaderBtn text={"Дизайн"} />
+        </div>
       </div>
     </div>
   );

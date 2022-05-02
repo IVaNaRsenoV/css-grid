@@ -5,6 +5,7 @@ import {
   Paragraph,
   HeaderContent,
   Description,
+  ShowReviews,
 } from "../../../components/Components-Content";
 
 export const Content = () => {
@@ -21,6 +22,7 @@ export const Content = () => {
             margin: "0 auto",
           }}
         ></div>
+        <ShowReviews />
       </div>
     </content>
   );
