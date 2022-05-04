@@ -1,0 +1,30 @@
+.plus__container {
+    .advantage {
+        padding-bottom: 27px;
+        span {
+            font-family: Noto Sans;
+            font-weight: 500, Medium;
+            font-size: 22px;
+            line-height: 30px;
+            color: #3B434E;
+        }
+    }
+    .card {
+        padding-bottom: 42px;
+        h3 {
+            font-family: Noto Sans;
+            font-weight: 700, Bold;
+            font-size: 20px;
+            line-height: 28px;
+            color: #3B434E;
+            padding-bottom: 20px;
+        }
+        span {
+            font-family: Noto Sans;
+            font-weight: 400, Regular;
+            font-size: 18px;
+            line-height: 29px;
+            color: #3B434E;
+        }
+    }
+}

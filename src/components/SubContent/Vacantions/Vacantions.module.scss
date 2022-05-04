@@ -1,0 +1,111 @@
+.vacantions__container {
+    padding-bottom: 47px;
+    .content {
+        display: flex;
+    }
+    .header__container {
+        padding: 54px 0px 24px 0px;
+        display: flex;
+        .header {
+            color: #3B434E;
+            font-size: 22px;
+            padding-right: 22px;
+            font-weight: 500, Medium;
+            font-size: Noto Sans;
+            line-height: 30px;
+        }
+        button {
+            background: #DE0000;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 4px 10px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.2s;
+            border-radius: 40px;
+            font-size: 14px;
+        }
+        button:hover {
+            background: #3b0c0c;
+        }
+    }
+
+    .left__container {
+        text-align: center;
+        background: white;
+        padding: 20px 30px 30px 30px;
+        margin-right: 30px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+        border-radius: 5px;
+        span {
+            font-family: Noto Sans;
+            font-weight: 300, Light;
+            font-size: 20px;
+            line-height: 28px;
+            color: #3B434E;
+        }
+        h3 {
+            font-family: Noto Sans;
+            font-weight: 700, Bold;
+            font-size: 36px;
+            line-height: 50px;
+            color: #7653FC;
+        }
+    }
+
+    .right__container {
+        padding: 20px 40px 30px 40px;
+        display: flex;
+        flex-grow: 1;
+        justify-content: space-evenly;
+        background: #FFFF;
+        .card {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+        span:nth-child(1n) {
+            font-family: Noto Sans;
+            font-weight: 300, Light;
+            font-size: 20px;
+            color: #3B434E;
+            padding-bottom: 8px;
+        }
+        span:nth-child(2n) {
+            font-family: Noto Sans;
+            font-weight: 700, Bold;
+            font-size: 26px;
+            color: #3B434E;
+            padding-bottom: 16px;
+        }
+        .card:nth-child(2n) {
+            border-left: 1px solid #EBEBEB;
+            border-right: 1px solid #EBEBEB;
+        }
+    }
+    
+    .stars {
+        display: flex;
+        flex-direction: row;
+        width: 150px;
+        justify-content: space-evenly;
+        .star {
+            height: 20px;
+            width: 20px;
+            background: #FC836D;
+            cursor: pointer;
+            border-radius: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            span {
+                color: white;
+                padding-top: 6px;
+            }
+        }
+    }
+}

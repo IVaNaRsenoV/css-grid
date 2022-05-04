@@ -1,0 +1,27 @@
+.skills__container {
+    h4 {
+        margin-bottom: 22px;
+    }
+    button:first-child {
+        margin-left: 0px;
+    }
+    button {
+        margin-left: 10px;
+        padding: 5px 10px;
+        border-radius: 10px;
+        background: #FFFFFF;
+        border: 1px solid #7653FC;
+        color: #7653FC;
+        font-size: 12px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        cursor: pointer;
+        transition: all 0.2s;
+    }
+    button:hover {
+        background: rgb(20, 20, 44);
+        border: 1px solid rgb(20, 20, 44);
+        color: yellow;
+    }
+}

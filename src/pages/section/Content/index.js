@@ -8,10 +8,19 @@ import {
   ShowReviews,
 } from "../../../components/Components-Content";
 
+import { SubContent } from "../../../components/SubContent";
+
 export const Content = () => {
   return (
     <content className={styles.content}>
-      <div className={styles.skillbox}>
+      <div
+        className={styles.skillbox}
+        style={{
+          backgroundColor: "#FFFFFF",
+          boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.05)",
+          borderRadius: "5px",
+        }}
+      >
         <HeaderContent skillbox={skillbox} />
         <Paragraph />
         <Description />
@@ -24,6 +33,7 @@ export const Content = () => {
         ></div>
         <ShowReviews />
       </div>
+      <SubContent />
     </content>
   );
 };
